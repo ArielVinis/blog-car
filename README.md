@@ -1,24 +1,36 @@
-# README
+# Rails Learning Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este é um projeto de estudo e prática com Ruby on Rails, focado em explorar e compreender a estrutura e funcionalidades do framework. O objetivo é desenvolver habilidades práticas com Rails, que será minha principal ferramenta de trabalho.
 
-Things you may want to cover:
+## Sobre o Projeto
 
-* Ruby version
+Este projeto serve como um ambiente de aprendizado para:
+- Entender a arquitetura MVC do Rails
+- Praticar o desenvolvimento de aplicações web
+- Explorar recursos e gems do ecossistema Rails
+- Desenvolver boas práticas de programação
 
-* System dependencies
+## Requisitos Técnicos
 
-* Configuration
+* Ruby versão: 3.2.0 ou superior
+* Rails versão: 7.0.0 ou superior
+* PostgreSQL como banco de dados
+* Node.js e Yarn para gerenciamento de assets
 
-* Database creation
+## Configuração do Ambiente
 
-* Database initialization
+1. Clone o repositório
+2. Execute `bundle install` para instalar as dependências
+3. Configure o banco de dados em `config/database.yml`
+4. Execute `rails db:create db:migrate` para criar e configurar o banco
+5. Inicie o servidor com `rails server`
 
-* How to run the test suite
+## Estrutura do Projeto
 
-* Services (job queues, cache servers, search engines, etc.)
+O projeto segue a estrutura padrão do Rails, organizado em:
+- `app/` - Controllers, Models, Views e Helpers
+- `config/` - Configurações da aplicação
+- `db/` - Migrações e seeds do banco de dados
 
-* Deployment instructions
+## Desenvolvimento
 
-* ...
