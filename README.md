@@ -32,5 +32,27 @@ O projeto segue a estrutura padrão do Rails, organizado em:
 - `config/` - Configurações da aplicação
 - `db/` - Migrações e seeds do banco de dados
 
-## Desenvolvimento
+## Desenvolvimento de Vehicle
 
+O recurso Vehicle foi implementado como um exemplo prático de CRUD (Create, Read, Update, Delete) em Rails, demonstrando:
+
+### Funcionalidades Implementadas
+- Listagem de veículos (`index`)
+- Criação de novos veículos (`new`, `create`)
+- Visualização detalhada (`show`)
+- Edição de veículos existentes (`edit`, `update`)
+- Remoção de veículos (`destroy`)
+
+### Estrutura do Controller
+O `VehiclesController` implementa todas as ações RESTful necessárias, utilizando:
+- `before_action` para carregar o veículo antes das ações específicas
+- Parâmetros permitidos (brand, model, year, kind) através de strong parameters
+- Redirecionamentos apropriados após cada ação
+- Tratamento de erros com renderização de formulários
+
+### Rotas
+As rotas foram configuradas em `routes.rb` usando `resources :vehicles` com ações específicas, caso o controller tiver todas as rotas, não precisa utilizar o `only`.
+
+Referencia:
+- 
+[Bora Codar - Criando uma API REST com Ruby on Rails](https://www.youtube.com/watch?v=F2qEsqDXZWI&ab_channel=BoraCodar)
