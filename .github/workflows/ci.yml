@@ -32,13 +32,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          node-version: '18'
-
-      - name: Install JS dependencies
-        run: npm install
+          ruby-version: .ruby-version
+          bundler-cache: true
 
       - name: Scan for security vulnerabilities in JavaScript dependencies
         run: npm audit --audit-level=high
