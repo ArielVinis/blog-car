@@ -1,0 +1,21 @@
+<%= form_with model: vehicle do |form| %>
+    <p>
+        <%= form.label :brand %>
+        <%= form.text_field :brand %>
+    </p>
+    <p>
+        <%= form.label :model %>
+        <%= form.text_field :model %>
+    </p>
+    <p>
+        <%= form.label :year %>
+        <%= form.number_field :year %>
+    </p>
+    <p>
+        <%= form.label :kind %>
+        <%= form.number_field :kind %>
+    </p>
+    <p>
+        <%= form.submit "Create" %>
+    </p>
+<% end %>

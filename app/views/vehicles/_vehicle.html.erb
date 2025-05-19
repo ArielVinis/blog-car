@@ -1,0 +1,27 @@
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Kind</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+            <tr>
+                <td><%= vehicle.id %></td>
+                <td><%= vehicle.brand %></td>
+                <td><%= vehicle.model %></td>
+                <td><%= vehicle.year %></td>
+                <td><%= vehicle.kind %></td>
+            <td>
+                <%= link_to "Show", vehicle_path(vehicle) %> |
+                <%= link_to "Edit", edit_vehicle_path(vehicle) %> |
+                <%= button_to "Destroy", vehicle_path(vehicle), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+            </td>
+        </tr>
+    </tbody>
+</table>
